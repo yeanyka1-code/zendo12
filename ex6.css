@@ -1,11 +1,15 @@
-* {
+ * {
          margin: 0;
          padding: 0;
          box-sizing: border-box;
 }
+body{
+     background-color: white;
+}
 .nav-bar{
-         background-color: Gray;
+         background-color:gray;
          width: 100%;
+         height: 50PX;
          
 }
 .navigation{
@@ -26,6 +30,9 @@
          height: 50px;
          /* background-color: brown; */
          display: flex;
+         font-size: 30px;
+         justify-content: center;
+         padding: 10px 0;
 }
 .nav-right{
          width: 25%;
@@ -48,5 +55,215 @@
          place-items: center;
          padding: 0;
          text-transform: uppercase;
+}
+.nav-right ul{
+         list-style-type: none;
+         display: flex;
+         gap: 10px;
+         justify-content: end;
+         height: 100%;
+         background-color:gray;
+         align-items: center;
+}
+.nav-right ul li{
+         text-transform: uppercase;
+         padding: 0 15px;
+         font-size: 20px;        
+}
+.nav-right ul i{
+         font-size: 25px;
+}
+.nav-right ul li:hover{
+         cursor: pointer;
+         background-color: gray;
+}
+.hero-section{
+         width: 87%;
+         height: 620px;
+         /* background-color: red; */
+         margin: auto;         
+}
+.img-hero{
+         width: 100%;
+         height: 100%;
+}
+.position{
+         width: 120%;
+         height: 100%;
+         position: relative;
+         left: 50px;
+         top: 50%;
+         background-color: red;
+}
+.box{
+     width: 100px;
+     height: 100px;
+     background-color: blue;    
+}
+.btn-container button{
+     padding: 15px 20px;
+     background-color: transparent;
+     color: white;
+     border: 3px solid white;
+     border-radius: 10px;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: bold;
+     transition: all 0.5s ease-in-out, backgroud color 0.5s ease-in-out;
+}
+.btn-container{
+     position: absolute;
+     bottom: 13%;
+     left: 38%;
+     display: flex;
+     gap: 16px;
+}
+.btn-container button:hover{
+     transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background-color: blue;
+    cursor: pointer;
+}
+.brand{
+     height:100px;
+     width: 100%;
+     background-color: blue;
+     display: flex;
+}
+.brand-img{
+     width: 14.28%;
+     height: 100%;
+     background-color: red;
+     
+     }
+.brand-img img{
+     width: 100%;
+     height: 100%;
+}     
+.life-style{
+     display: flex;
+     gap: 1%;
+     height: 550px;
+}
+.life-style div{
+     width: 33%;
+     /* height: 100%; */
+     /* background-color: blueviolet; */
+}
+.life-style div img{
+     width: 100%;
+     height: 100%;
+}
+.life-style-bottom{
+     margin-top: 1%;
+     height: 600px;
+     /* background-color: blueviolet; */
+     display: flex;
+     gap: 2%;
+}
+.life-style-bottom div{
+     width: 100%;
+     height: 100%;
+     /* background-color: blue; */
+}
+.life-style-bottom div img{
+     width: 100%;
+     height: 100%;
+}
+.container-width{
+     width: 87%;
+     margin: auto;
+}
+.main-section{
+    /* background-color:pink;  */
+    margin-top: 20px;
+}
+.title-head-main-section{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.title-head-main-section a{
+     font-size: 25px;
+     color: black;
+     text-decoration: none;
+}
+.main-cart{
+height: 500px;
+/* background-color: aqua; */
+margin-top: 20px;
+gap: 1%;
+display: flex;
+}
+.cart{
+     height: 100%;
+     width: 100%;
+     position: relative;
+     /* background-color: blanchedalmond; */
+}
+.cart img{
+     width: 100%;
+     height: 85%;
+}
+.cart-title{
+     width: 100%;
+     height: 15%;
+     /* background-color: aqua; */
+     display: flex;
+     justify-content: space-between;
+}
+.cart-title-left{
+     display:block;
+     /* background-color: aqua; */
+}
+.cart-title-left div{
+     display: flex;
+     gap: 15px;
+     margin-bottom: 5px;
+}
+.cart-title-left div span:first-child{
+     color:red;
+     font-weight: bold;
+}
+.cart-title-left div span:last-child{
+     color:black;
+     text-decoration: line-through;
+     font-weight: bold;
+}
+.color{
+display: flex;
+margin-top: 10px;
+gap: 20px;
+}
+.color li{
+     width: 20px;
+     height: 20px;
+     border-radius: 5px;
+     list-style-type: none;
+}
+.color li:first-child{
+     background-color: red;
+}
+/* .color li:last-child{
+     background-color: black;
+} */
+.dis{
+     position: absolute;
+     left: 0;
+     padding: 10px 15px;
+     background-color: red;
+     top: 15px;
+     left: 15px;
+     color: white;
+     border-radius: 5px;
+}
+.cart-brand{
+     position: absolute;
+     right: 15px;
+     bottom: 80px;
+     writing-mode: vertical-rl;
+     transform: rotate(180dg);
+     font-style: italic;
+
 }
 

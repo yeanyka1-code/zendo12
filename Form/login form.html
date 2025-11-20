@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <link rel="stylesheet" href="LoginForm.css">
+</head>
+<body>
+         <h1>Login Form</h1>
+         <form id="Loginform">
+         <input type="text" id="username" placeholder="Username" required>
+         <input type="password" id="password" placeholder="password" required>
+         <div class="container">
+                  <input type="checkbox" onclick="Showpassword()"> Show password
+         </div>
+         <button type="submit">Login</button>
+         <div class="message" id="showMessage"></div>
+         </form>
+         <script type="text/javascript" src="loginFormScript.js"></script>
+</body>
+</html>
