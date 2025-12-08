@@ -1,0 +1,70 @@
+.grid{
+         width: 700px;
+         display: grid;
+         grid-template-rows: 100px 100px 150px 100px 100px ;
+         grid-template-columns: 30% 20% auto auto;
+         /* background-color: blueviolet; */
+         grid-template-areas: 
+         "header menu menu menu"
+         "hero hero hero hero"
+         "main main blank image" 
+         "main main blank extra"
+         "banner banner banner banner";
+         gap:5px;    
+}
+.header{
+         background-color: aqua;
+         grid-area: header;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.menu{
+         background-color: blue;
+         grid-area: menu;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.hero{
+         background-color: blue;
+         grid-area: hero;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.main{
+         background-color: brown;
+         grid-area: main;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.blank{
+         background-color: white;
+         grid-area: blank;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.image{
+         background-color: pink;
+         grid-area: image;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.extra{
+         background-color: yellow;
+         grid-area: extra;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+.banner{
+         background-color: aquamarine;
+         grid-area: banner;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}

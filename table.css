@@ -1,0 +1,38 @@
+.grid{
+         width: 900px;
+         display: grid;
+         grid-template-rows: 100px 100px 400px 300px 100px;
+         grid-template-columns: 30% auto auto;
+         grid-template-areas: 
+         "header header header"
+         "Navigation Navigation Navigation"
+         "Asid content content"
+         "Asid selection selection"
+         "footer footer footer";
+         gap: 10px;
+
+}
+.header{
+         background-color: aqua;
+         grid-area: header;
+}
+.Navigation{
+         background-color: blue;
+         grid-area: Navigation;
+}
+.Asid{
+     background-color: blueviolet;
+     grid-area: Asid;
+}
+.content{
+         background-color: brown;
+         grid-area: content;
+}
+.selection{
+         background-color: pink;
+         grid-area: selection;
+}
+.footer{
+         background-color: orange;
+         grid-area: footer;
+}

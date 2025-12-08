@@ -1,0 +1,18 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.grid{
+         display: grid;
+         /* background-color: aqua; */
+         grid-template-rows: auto;
+         grid-template-columns:  30%  10% repeat(3,1fr) 10%;
+         column-gap: 10px;
+         row-gap: 40px;
+         gap: 20px;
+}
+.item{
+        background-color: cyan;
+         height: 500px;
+}

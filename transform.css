@@ -1,0 +1,45 @@
+*{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+
+}.div1{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+    transition-property: transform;
+    transition-duration: 5s;
+    transform: translateX(200px);
+}
+.div2{
+     width: 100px;
+     height: 100px;
+     background-color:purple;
+    transition-property:all;
+    transition-duration: 2s;
+    transform: translateX(200px);
+    animation-iteration-count: infinite;
+    animation: alternate;
+}
+.div3{
+     width: 100px;
+     height: 100px;
+     background-color: yellow;
+    transition-property:all;
+    transition-duration: 1s;
+    transform: translateX(200px);
+    animation-iteration-count: infinite;
+    animation: alternate;
+
+}
+@keyframes myAnimate{
+         from{
+            transform: translateX(0);
+         }
+         to{
+           transform: translateX(300px);
+         }
+}
+
+
+    

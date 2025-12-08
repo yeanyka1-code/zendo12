@@ -1,0 +1,122 @@
+
+.contain {
+  display: grid;
+  grid-template-rows: 100px 200px 200px 200px 200px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero "
+    "main main blank image "
+    "main main blank extra"
+    "banner banner banner banner"
+}
+
+.header {
+  grid-area: header;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu {
+  grid-area: menu;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.extra {
+  grid-area: extra;
+  background-color: green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  grid-area: image;
+  background-color: skyblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:768px) {
+  .contain {
+    display: grid;
+    grid-template-rows: 100px 100px 200px 200px 200px 200px 200px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "menu"
+      "hero"
+      "main"
+      "banner"
+      "extra"
+      "image"
+
+  }
+}
+@media (min-width:768px) {
+  .contain {
+    display: grid;
+    grid-template-rows: 100px 200px 200px 200px 200px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+      "header header header"
+      "hero hero hero "
+      "menu main main "
+      "menu banner banner"
+      "menu extra image"
+  }
+}
+
+@media (min-width:1200px) {
+  .contain {
+    display: grid;
+    grid-template-rows: 100px 200px 200px 200px 200px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+      "header menu menu menu"
+      "hero hero hero hero "
+      "main main blank image "
+      "main main blank extra"
+      "banner banner banner banner"
+  }
+}
+

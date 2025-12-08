@@ -1,0 +1,50 @@
+/* div{
+         background-color: blue;
+}
+@media (max-width:600px){
+
+}
+@media (max-width:600px) and (max-width:1000px){
+
+         div{
+                  background-color: red;
+         }
+}
+@media  (min-width:1000) and (max-width:1300px){
+         div{
+                  background-color: blueviolet;
+         }
+
+}
+@media (min-width:1300px){
+         div{
+                  background-color: brown;
+
+         }
+}
+ */
+ /* mobile phone */
+
+/* tablet */
+@media (min-width:768px){
+ div{
+         background-color: aquamarine;
+         height: 300px;
+ }
+}
+/* labtop small or large tablet */
+
+@media (min-width:992px){
+     div{
+         background-color: red;
+         height: 300px;
+     }
+}
+/* desktop */
+@media (min-width:1200px){
+         div{
+                  background-color: pink;
+                  height: 300px;
+         }
+
+}
